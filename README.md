@@ -45,9 +45,7 @@ This is a simple file sharing website that allows users to upload files and shar
 
 
 ## Link
-```
-    https://i-share-reactjs.vercel.app/
-```
+https://i-share-reactjs.vercel.app/
 
 ## Acknowledgments
 
