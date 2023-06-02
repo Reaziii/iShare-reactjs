@@ -12,10 +12,9 @@ This is a simple file sharing website that allows users to upload files and shar
 
 ## Technologies Used
 
-- HTML, CSS, JavaScript for frontend development
+- React JS for frontend development
 - Firebase for real-time signaling and hosting
 - WebRTC for peer-to-peer communication
-- Firebase Storage for file storage
 
 ## How It Works
 
