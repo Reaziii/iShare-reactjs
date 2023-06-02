@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# File Sharing Website with WebRTC Connection
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple file sharing website that allows users to upload files and share them with others using WebRTC connection. The website generates a unique link for each file uploaded, and when a user opens that link, a direct peer-to-peer connection is established between the uploader and downloader for secure and fast file transfer.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Upload files and generate unique sharing links
+- Direct peer-to-peer file transfer using WebRTC connection
+- Real-time signaling using Firebase as a signaling server
+- Progress bar to track file upload and download progress
+- Simple and intuitive user interface
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- HTML, CSS, JavaScript for frontend development
+- Firebase for real-time signaling and hosting
+- WebRTC for peer-to-peer communication
+- Firebase Storage for file storage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How It Works
 
-### `npm test`
+1. Uploader selects a file to upload on the website.
+2. The file is uploaded and details of the file store in the firebase storage , and a unique sharing link is generated.
+3. The sharing link is displayed to the uploader.
+4. The downloader opens the sharing link in their browser.
+5. The downloader's browser establishes a WebRTC connection with the uploader's browser.
+6. The downloader requests the file from the uploader using the WebRTC connection.
+7. The uploader's browser sends the file to the downloader's browser via the WebRTC connection.
+8. The file is downloaded and saved on the downloader's device.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. Clone this repository to your local machine.
+2. Set up a Firebase project and enable Firebase Storage.
+3. Replace the Firebase configuration in `.env` with your own Firebase configuration.
+4. npm install && npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Open the website in your browser.
+2. Choose a file to upload using the file upload button.
+3. After the file is uploaded, a unique sharing link will be generated.
+4. Share the link with others who want to download the file.
+5. When someone opens the sharing link, There will be a download button. Click the download button and download it.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Acknowledgments
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- The project is inspired by the need for secure and direct file sharing.
+- Thanks to the contributors and open-source community for their valuable contributions.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contact
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For any questions or inquiries, please contact [baphonreaz@gmail.com].
